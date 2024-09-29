@@ -1,22 +1,284 @@
 body {
-    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
 }
 
-.App {
-    max-width: 800px;
-    width: 100%;
-    margin: 20px auto;
-    box-sizing: border-box;
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 30px;
+.min-h-screen {
+    min-height: 100vh;
+}
 
+.bg-gradient-to-br {
+    background: linear-gradient(to bottom right, #EDE9FE, #E0E7FF);
+}
+
+.py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* 카드 스타일 */
+.max-w-md {
+    max-width: 28rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.rounded-xl {
+    border-radius: 0.75rem;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+/* 타이포그래피 */
+.uppercase {
+    text-transform: uppercase;
+}
+
+.tracking-wide {
+    letter-spacing: 0.025em;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-indigo-500 {
+    color: #6366F1;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.mb-1 {
+    margin-bottom: 0.25rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.text-black {
+    color: #000;
+}
+
+/* 폼 스타일 */
+.mt-6 {
+    margin-top: 1.5rem;
+}
+
+.flex {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+}
 
-    background-color: coral;
+.space-x-4 > * + * {
+    margin-left: 1rem;
+}
+
+.shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.focus\:ring-indigo-500:focus {
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5);
+}
+
+.focus\:border-indigo-500:focus {
+    border-color: #6366F1;
+}
+
+.block {
+    display: block;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.border-gray-300 {
+    border-color: #D1D5DB;
+}
+
+.rounded-md {
+    border-radius: 0.375rem;
+}
+
+/* 버튼 스타일 */
+.inline-flex {
+    display: inline-flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.border-transparent {
+    border-color: transparent;
+}
+
+.text-white {
     color: white;
+}
 
-    /* align-items: center; */
+.bg-indigo-600 {
+    background-color: #4F46E5;
+}
+
+.hover\:bg-indigo-700:hover {
+    background-color: #4338CA;
+}
+
+.focus\:outline-none:focus {
+    outline: none;
+}
+
+.focus\:ring-2:focus {
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.5);
+}
+
+.focus\:ring-offset-2:focus {
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.5);
+}
+
+.transition-colors {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+}
+
+/* 메시지 스타일 */
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.bg-red-100 {
+    background-color: #FEE2E2;
+}
+
+.text-red-700 {
+    color: #B91C1C;
+}
+
+.bg-green-100 {
+    background-color: #D1FAE5;
+}
+
+.text-green-700 {
+    color: #047857;
+}
+
+.transition-opacity {
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+/* 단어 목록 스타일 */
+.mt-8 {
+    margin-top: 2rem;
+}
+
+.divide-y > * + * {
+    border-top-width: 1px;
+    border-color: #E5E7EB;
+}
+
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.hover\:bg-gray-50:hover {
+    background-color: #F9FAFB;
+}
+
+.transition-colors {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.text-gray-900 {
+    color: #111827;
+}
+
+.text-gray-500 {
+    color: #6B7280;
+}
+
+.ml-4 {
+    margin-left: 1rem;
+}
+
+.text-red-600 {
+    color: #DC2626;
+}
+
+.hover\:text-red-800:hover {
+    color: #991B1B;
+}
+
+/* SVG 아이콘 스타일 */
+.h-5 {
+    height: 1.25rem;
+}
+
+.w-5 {
+    width: 1.25rem;
+}
+
+/* 반응형 스타일 */
+@media (min-width: 640px) {
+    .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    }
+    
+    .md\:max-w-2xl {
+    max-width: 42rem;
+    }
 }
