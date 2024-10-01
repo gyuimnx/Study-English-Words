@@ -41,6 +41,7 @@ const ChapterManagement = () => {
     <div style={{ fontFamily: 'Arial, sans-serif', maxWidth: '800px', margin: '0 auto', padding: '20px' }}>
         <h1 style={{ fontSize: '24px', marginBottom: '20px' }}>챕터 관리</h1>
         <button
+            className='newBtn'
             onClick={() => setIsDialogOpen(true)}
             yle={{
                 backgroundColor: '#007bff',
